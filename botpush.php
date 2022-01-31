@@ -18,7 +18,9 @@ require "vendor/autoload.php";
 
 //echo $response->getHTTPStatus() . ' ' . $response->getRawBody();
 
-echo "test";
+$url  = "https://thawing-lowlands-38764.herokuapp.com/botpush.php";  // Site URL.
+$site = file_get_contents($url);   
+echo $site;
 
 
 
